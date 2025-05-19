@@ -191,3 +191,26 @@ footer a {
   color: inherit;
   text-decoration: underline;
 }
+.card-grid.single {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 40px;
+}
+
+.card-grid.three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .card-grid.three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid.three {
+    grid-template-columns: 1fr;
+  }
+}
