@@ -214,3 +214,13 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--clr-primary);
+}
+.modal-content a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--clr-accent);
+  font-weight: 600;
+}
