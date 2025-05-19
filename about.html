@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Abhinav Chhabra</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card-section {
+      margin-bottom: 40px;
+    }
+    .card-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: var(--clr-primary);
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .item img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: contain;
+      box-shadow: var(--shadow);
+    }
+    .item div {
+      flex: 1;
+    }
+    .item div strong {
+      display: block;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .item-header .title {
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    .item-header .date {
+      font-weight: 600;
+      font-size: 0.9em;
+      color: var(--clr-light);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>About Me</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="misc.html">Personal Interests</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Profile Summary -->
+    <div class="card profile card-section">
+      <p>My name is Abhinav Chhabra. I am currently pursuing my Master’s in Financial Engineering at Cornell. Before this, I was pursuing a double major from BITS Pilani, India. I graduated with a Master’s in Mathematics and a Bachelors in Electronics and Communication. My education background has helped me build a strong foundation in Mathematics, Programming, and Finance. As a part of my curriculum, I have done various projects in Machine Learning and Optimization Techniques, particularly in Time Series Forecasting, Technical Analysis, and Portfolio Optimization.</p>
+    </div>
+    <!-- Previous Experience -->
+    <section class="card card-section">
+      <h3>Previous Experience</h3>
+      <div class="item">
+        <img src="images/nvidia.png" alt="NVIDIA">
+        <div>
+          <div class="item-header">
+            <span class="title">Intern, NVIDIA</span>
+            <span class="date">Jan 2024 – Jul 2024</span>
+          </div>
+          <p>Developed a Django and SQL-based dashboard to automate report generation and streamline data analytics for my team.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/invesco.jpg" alt="Invesco">
+        <div>
+          <div class="item-header">
+            <span class="title">Quant Research Intern, INVESCO</span>
+            <span class="date">May 2023 - Dec 2023</span>
+          </div>
+          <p>Optimized weights of secuirty in an index using quantitative models and integer programming methods.</p>
+      </div>
+      </div>
+      <div class="item">
+        <img src="images/bill cloud.jpeg" alt="Bill Cloud">
+        <div>
+          <div class="item-header">
+            <span class="title">Machine Learning Intern, Bill Cloud</span>
+            <span class="date">June 2021 - July 2021</span>
+          </div>
+          <p>Engineered predictive models leveraging NLP techniques for fraud detection, achieving 94% accuracy on test datasets.</p>
+      </div>
+    </section>
+
+    <!-- Education Background -->
+    <section class="card card-section">
+      <h3>Education Background</h3>
+      <div class="item">
+        <img src="images/Cornell_University_seal.svg.png" alt="Cornell University">
+        <div>
+          <div class="item-header">
+            <span class="title">MEng. Financial Engineering</span>
+            <span class="date">Aug 2024 – Dec 2025</span>
+          </div>
+          <p>Cornell University</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/bits.png" alt="BITS Pilani">
+        <div>
+          <div class="item-header">
+            <span class="title">M.Sc. Mathematics & B.E. Electronics and Communication</span>
+            <span class="date">Aug 2019 – July 2024</span>
+          </div>
+          <p>Birla Institute of Technology & Science, Pilani</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Contact:
+      <a href="mailto:ac3226@cornell.edu">ac3226@cornell.edu</a>
+      | +1 (607) 262‑3598
+    </div>
+  </footer>
+</body>
+</html>
