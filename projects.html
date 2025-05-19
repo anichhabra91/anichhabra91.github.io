@@ -1,147 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects — Abhinav Chhabra</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Expand container to use full width */
-    .container {
-      max-width: none;
-      width: 100%;
-      padding: 20px 40px;
-    }
-    /* Numbered list styling */
-    .card ol {
-      counter-reset: project;
-      list-style: none;
-      padding-left: 0;
-    }
-    .card ol li {
-      counter-increment: project;
-      margin-bottom: 16px;
-    }
-    .card ol li::before {
-      content: counter(project) ". ";
-      font-weight: 600;
-    }
-    .card hr {
-      border: none;
-      height: 1px;
-      background-color: #e0e0e0;
-      margin: 16px 0;
-    }
-    /* Sidebar image styling */
-    .content-wrapper {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      flex-wrap: nowrap;
-    }
-    .sidebar {
-      position: sticky;
-      top: 80px;
-      flex: 0 0 120px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .sidebar img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      object-fit: contain;
-    }
-    /* Allow card to grow */
-    .main-card {
-      flex: 1;
-      max-width: none;
-      padding: 30px;
-      background-color: var(--clr-card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 40px;
-    }
-    /* Responsive: hide sidebars on small screens */
-    @media (max-width: 800px) {
-      .sidebar { display: none; }
-      .content-wrapper { justify-content: center; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Projects</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="misc.html">Personal Interests</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="content-wrapper">
-      <div class="sidebar left">
-        <img src="images/montecarlosim.png" alt="Monte Carlo Simulation">
-        <img src="images/python.jpeg" alt="Python Logo">
-        <img src="images/nn.png" alt="Neural Network">
-        <img src="images/investing.png" alt="Investing">
-        <img src="images/qt.png" alt="QT">
-      </div>
-
-      <div class="main-card">
-        <h3>Publications</h3>
-        <ol>
-          <li>V. Selvakumar, Dipak Kumar Satpathi, Abhinav Chhabra and Arjita Nema, <em>Deep Learning and Machine Learning Models to Forecast BSE and NIFTY Sensex IT Index</em>, Advances and Applications in Statistics 82 (2022), 9–26.</li>
-        </ol>
-
-        <h3>Selected Projects</h3>
-        <ol>
-          <li><strong>Modeling Financial Market Sentiments to Predict Price Movement (Cornell University):</strong> Developed a pipeline combining BERT-based news sentiment analysis with technical indicators (RSI, EMA, MACD) and improved accuracy by 17% through feature selection and hyperparameter tuning.</li>
-          <hr>
-          <li><strong>Derivative Pricing and Implied Volatility Modelling (Cornell University):</strong> Implemented a Black–Scholes and Monte Carlo framework, and trained Random Forest regressors to achieve an R² of 93% on implied volatility predictions.</li>
-          <hr>
-          <li><strong>Quantitative Risk Optimization (Cornell University):</strong> Engineered a minimum variance portfolio using Mean–Variance Optimization, yielding an annualized Sharpe ratio of 0.656, and conducted VaR and ES analyses for downside risk mitigation.</li>
-          <hr>
-          <li><strong>Sports Analysis (Deutsche Sporthochschule Köln, Germany):</strong> Built a classification model with PCA and RFE to identify top players; applied Apriori algorithms to analyze cricket matchups and support data-driven team selection.</li>
-          <hr>
-          <li><strong>Application of Queuing Theory in Outpatient Departments (BITS Pilani):</strong> Formulated deterministic and probabilistic queuing models and simulated patient flow using Monte Carlo methods to reduce wait times and optimize server allocation.</li>
-          <hr>
-          <li><strong>BITSMart — E‑Commerce Web Application (BITS Pilani):</strong> Designed wallet transactions and report generation features; implemented role-based authentication for admins, managers, and users to enhance security and functionality.</li>
-          <hr>
-          <li><strong>Cost Optimization in Various Fields (BITS Pilani):</strong> Analyzed coalition impacts in newspaper supply problems and evaluated solar PV investment strategies under stochastic demand to recommend optimal vendor pricing and system sizing.</li>
-          <hr>
-          <li><strong>Loan Prediction App (BITS Pilani):</strong> Developed and deployed a logistic regression model achieving 82.92% accuracy within a real-time web app, streamlining loan approval decisions.</li>
-        </ol>
-      </div>
-
-      <div class="sidebar right">
-        <img src="images/cpp.png" alt="C++ Logo">
-        <img src="images/ml.png" alt="Machine Learning">
-        <img src="images/mcs.png" alt="Monte Carlo Cards">
-        <img src="images/wealth.png" alt="Wealth">
-        <img src="images/marketmaker.png" alt="MarketMaker">
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      Contact:
-      <a href="mailto:ac3226@cornell.edu">ac3226@cornell.edu</a>
-      | +1 (607) 262‑3598
-    </div>
-  </footer>
-
-</body>
-</html>
- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,8 +12,10 @@
     }
     .content-wrapper {
       display: flex;
-      gap: 20px;
+      height: calc(100vh - 100px); /* adjust for header/footer */
+      overflow: hidden;
     }
+
     .sidebar {
       position: relative;
       top: 80px;
@@ -171,8 +29,10 @@
       margin-bottom: 20px;
       border-radius: 8px;
     }
+    
     .main-card {
       flex: 1;
+      overflow-y: auto;
       padding: 30px;
       background: var(--clr-card);
       border-radius: var(--radius);
