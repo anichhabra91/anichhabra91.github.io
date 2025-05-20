@@ -224,3 +224,18 @@ footer a {
   color: var(--clr-accent);
   font-weight: 600;
 }
+.project-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.project-card:hover .read-more {
+  text-decoration: none;
+}
