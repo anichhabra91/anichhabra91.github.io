@@ -54,9 +54,9 @@ nav a:hover {
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  width: 100%;
+  padding: 20px 40px;
+  margin: 0 auto;
 }
 
 main {
