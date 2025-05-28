@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home — Abhinav Chhabra</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     /* Center resume and LinkedIn links */
     .links {
@@ -32,11 +34,35 @@
       line-height: 1.6;
       margin: 0 20px;
     }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 1.4em;
+    }
+    
+    .social-icons a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: #0072b1; /* LinkedIn blue on hover or customize */
+    }
+
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container header-flex">
       <h1>Abhinav Chhabra</h1>
       <nav>
         <a href="index.html">Home</a>
@@ -44,8 +70,13 @@
         <a href="projects.html">Projects</a>
         <a href="misc.html">Personal Interests</a>
       </nav>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abhinav-chhabra19/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/anichhabra91" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </header>
+
 
   <main class="container">
     <div class="card intro">
