@@ -166,38 +166,48 @@
         <h3>Selected Projects</h3>
         <div class="card-grid three">
           <div class="project-card" data-id="1">
+            <div class="project-title">Managed Futures Strategy (TSMOM)</div>
+            <div class="read-more">🔗</div>
+          </div>
+          
+          <div class="project-card" data-id="2">
+            <div class="project-title">Insider Trading Predictive Signals</div>
+            <div class="read-more">🔗</div>
+          </div>
+
+          <div class="project-card" data-id="3">
             <div class="project-title">Execution Strategies to minimize Bid-Ask Spread</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="2">
+          <div class="project-card" data-id="4">
             <div class="project-title">ESG Aware Portfolio Optimization</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="3">
+          <div class="project-card" data-id="5">
             <div class="project-title">Modeling Financial Market Sentiments to Predict Price Movement</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="4">
+          <div class="project-card" data-id="6">
             <div class="project-title">ML Based Derivative Pricing and Implied Volatility Modelling</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="5">
+          <div class="project-card" data-id="7">
             <div class="project-title">Resilient Portfolios Using MPT</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="6">
+          <div class="project-card" data-id="8">
             <div class="project-title">ML for Credit Risk and Loan Approval</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="7">
+          <div class="project-card" data-id="9">
             <div class="project-title">Strategy Mining in Soccer & Cricket Analytics</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="8">
+          <div class="project-card" data-id="10">
             <div class="project-title">Optimizing OPD Queues with Simulation</div>
             <div class="read-more">🔗</div>
           </div>
-          <div class="project-card" data-id="9">
+          <div class="project-card" data-id="11">
             <div class="project-title">Cost Optimization in Energy and Supply Chain Systems</div>
             <div class="read-more">🔗</div>
           </div>
@@ -232,46 +242,58 @@
   <script>
     const projectInfo = {
       1: {
+        title: 'Managed Futures Strategy (TSMOM)',
+        desc: 'Built a complete multi-asset managed futures / CTA strategy using monthly returns across FX, Equity, Fixed Income, and Commodity markets (1969–2014). Implemented time-series momentum (TSMOM) with 11-month lookback, rolling 9-month volatility forecasting, cross-sectional momentum ranking, Ledoit–Wolf shrinkage, and asset-class risk budgeting. The final TSMOM v2 strategy achieved a net Sharpe ratio of 1.32 and outperformed both static benchmarks and the SG Trend Index. Features: volatility targeting, covariance shrinkage, risk-budgeting, out-of-sample validation.',
+        link: 'https://github.com/anichhabra91/ManagedFutures_TSMOM' 
+      },
+      
+      2: {
+        title: 'Insider Trading Predictive Signals',
+        desc: 'Developed a full data pipeline analyzing SEC Form 3/4/5 insider trading data (2006–2025) to predict short-horizon stock returns. Cleaned filings, filtered 10b5-1 trades, engineered seniority-adjusted signals, and used clustering to separate routine trades from high-conviction insider behavior. Built naive and refined trading signals using 52-week z-scored net transactions and weighted seniority. Bias-free weekly backtests show statistically significant predictability at 7–30 day horizons, with refined PublicScore signals outperforming naive net-transaction approaches.',
+        link: 'https://github.com/anichhabra91/InsiderTradingSignals'
+      }
+
+      3: {
         title: 'Execution Strategies Using Market Microstructure Signals',
         desc: 'This project developed trade execution strategies to outperform the standard Time-Weighted Average Price (TWAP) benchmark using high-frequency order book data for AAPL, AMZN, GOOG, MSFT, and INTC. The strategies use features like spread, volume imbalance, microprice, and price velocity.\n\nThrough simulation and grid search optimization, the strategies achieved substantial spread reductions across stocks. On backtesting data, the event-driven strategy achieved up to 75% improvement. These results confirm that feature-driven rule-based algorithms significantly outperform TWAP, offering a practical and adaptive alternative for smarter trade execution.',
         link: 'https://github.com/anichhabra91/MarketMicrostructure.git'
       },
-      2: {
+      4: {
         title: 'ESG-Aware Portfolio Optimization using Regularization and Clustering',
         desc: 'This project explores integrating ESG considerations into portfolio optimization using S&P 500 data. Starting with Sharpe ratio maximization, the framework progressively incorporates ESG score thresholds and carbon emissions caps. To improve robustness, we introduce variance-based regularization and ESG-aware clustering techniques, particularly using Scope 3 emissions to guide stock selection.\n\nWe implemented six portfolio variants ranging from unconstrained to fully constrained and clustered portfolios. The best-performing configuration—using ESG and emissions constraints with clustering based on ESG and Scope 3 emissions—achieved a Sharpe ratio of 1.456, with emissions held at 90 and an ESG score of 45.04, all while maintaining a low turnover (16.3%). This demonstrates that ESG-aligned investing can achieve strong returns without compromising sustainability.',
         link: 'https://github.com/anichhabra91/ESGOptimization.git'
       },
-      3: {
+      5: {
         title: 'Modeling Financial Market Sentiments to Predict Price Movement',
         desc: 'This project leverages financial news headlines from CNBC, Reuters, and The Guardian to forecast stock market movements using supervised machine learning models. The approach combines sentiment-based features, lagged stock return data, and technical/fundamental indicators.\n\nKey steps included feature engineering, PCA/RFE-based selection, and GridSearchCV optimization across classifiers like Random Forest, Logistic Regression, and Gradient Boosting. Gradient Boosting and Random Forest models showed the highest predictive performance with strong F1-scores and accuracy, confirming the power of combining textual sentiment with market signals for price prediction.',
         link: 'https://github.com/anichhabra91/SentimentAnalysis.git'
       },
-      4: {
+      6: {
         title: 'ML Based Derivative Pricing and Implied Volatility Modelling',
         desc: 'This project explores machine learning-based enhancements to traditional derivative pricing. Using AAPL options data (2016–2020), we found that moneyness and time-to-expiry were the most influential features in predicting implied volatility. While ML-based volatility forecasting improved pricing accuracy, direct ML forecasting of option prices yielded even better results.\n\nMonte Carlo Simulation (MCS) using ML-predicted prices consistently outperformed both MCS with ML-derived volatility and classic Black-Scholes pricing, especially in volatile market conditions. This highlights the advantage of bypassing rigid assumptions through data-driven modeling.',
         link: 'https://github.com/anichhabra91/OptionPricng.git'
       },
-      5: {
+      7: {
         title: 'Resilient Portfolios Using MPT',
         desc: 'Constructed a minimum variance portfolio using JPM, BAC, and WFC, and benchmarked it against the BKX index across 2017–2022. The optimized portfolio achieved a Sharpe ratio of 0.656 in the pre-COVID period, outperforming the industry benchmark. During 2020–2022, it maintained lower volatility and superior Value-at-Risk (VaR) and Expected Shortfall (ES) metrics, demonstrating robust risk-adjusted performance even under market stress.',
         link: 'https://drive.google.com/file/d/16-LfXJr4OOQIC_hBlk43cs4VuZCbexuj/view?usp=sharing'
       },
-      6: {
+      8: {
         title: 'ML for Credit Risk and Loan Approval',
         desc: 'Developed a classification model to predict loan approval using demographic, income, and credit history features. Applied preprocessing techniques including feature encoding and outlier handling. Trained and evaluated models like Logistic Regression, Decision Trees, and Random Forest on the cleaned dataset. Achieved high accuracy and recall(~80%), helping identify creditworthy applicants effectively for lending institutions.',
         link: 'https://github.com/anichhabra91/LoanPredictionApp_1'
       },
-      7: {
+      9: {
         title: 'Strategy Mining in Soccer & Cricket Analytics',
         desc: 'Worked on three sports analytics projects using soccer and cricket datasets. First, explored the Pareto (80-20) principle in soccer by analyzing goals and assists across top 5 leagues; Second, built a player classification model using 200+ features and improved performance(by 20%) through dimensionality reduction with PCA and RFE. Lastly, applied the Apriori algorithm to T20 cricket data for team composition strategy, and identifying optimal bowlers based on lift metrics and game phase.',
         link: 'https://drive.google.com/file/d/1MmznP7t6peRdGXbFZw1qsvxPcdLUaNs7/view?usp=sharing'
       },
-      8: {
+      10: {
         title: 'Optimizing OPD Queues with Simulation',
         desc: 'Applied queuing theory to model patient flow in outpatient departments using both deterministic and probabilistic frameworks. Simulated patient arrival and service patterns to study the impact of server count on wait times and idle time. Identified a linear relationship between servers and waiting time in the deterministic model, and used Monte Carlo simulation in the probabilistic model to determine the optimal number of servers and reduce resource underutilization.',
         link:'https://drive.google.com/file/d/15jb2XxfdCsmbYU-uuvgFkbFWfs3Nheau/view?usp=sharing'
       },
-      9: {
+      11: {
         title: 'Cost Optimization in Energy and Supply Chain Systems',
         desc: 'Modeled optimal solar panel and storage capacity for a residential household by minimizing daily energy costs under stochastic irradiance and consumption profiles using analytical derivations and probabilistic fitting. Also analyzed the Newsvendor problem using coalition game theory and proved that full vendor coalitions minimize cost. Demonstrated that the optimal order quantity remains unchanged even when including profit, validating the π/(h + π) quantile rule.',
         link:'https://drive.google.com/file/d/1ZWR8jUNk9G0tWOLlWmRMZBgfH_QE6hQ_/view?usp=sharing'
