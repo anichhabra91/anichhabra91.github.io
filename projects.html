@@ -164,6 +164,13 @@
         </div>
         
         <h3>Selected Projects</h3>
+        <div class="project-card" data-id="12">
+          <div class="project-title">
+            Private Credit Index Construction (CFEM × Marathon Asset Management)
+          </div>
+          <div class="read-more">🔗</div>
+        </div>
+
         <div class="card-grid three">
           <div class="project-card" data-id="1">
             <div class="project-title">Managed Futures Strategy (TSMOM)</div>
@@ -298,6 +305,26 @@
         desc: 'Modeled optimal solar panel and storage capacity for a residential household by minimizing daily energy costs under stochastic irradiance and consumption profiles using analytical derivations and probabilistic fitting. Also analyzed the Newsvendor problem using coalition game theory and proved that full vendor coalitions minimize cost. Demonstrated that the optimal order quantity remains unchanged even when including profit, validating the π/(h + π) quantile rule.',
         link:'https://drive.google.com/file/d/1ZWR8jUNk9G0tWOLlWmRMZBgfH_QE6hQ_/view?usp=sharing'
       }
+      12: {
+        title: 'Private Credit Index Construction (CFEM × Marathon Asset Management)',
+        desc: `
+      Cornell Financial Engineering Manhattan (CFEM) Capstone sponsored by Marathon Asset Management.
+      
+      Built a transparent, reproducible private credit index using loan-level disclosures from Business Development Companies (BDCs). Developed an end-to-end pipeline to extract and clean investments from SEC 10-K/10-Q iXBRL filings (2023–2025).
+      
+      Key contributions:
+      • Automated SEC EDGAR ingestion and iXBRL parsing
+      • Rule-based correction of misreported interest-rate fields (PIC, PIK, spreads)
+      • Quarterly, flow-based, market-value weighted index construction
+      • Yield reconstruction using SOFR + spread and PIC + PIK identities
+      • Sub-index generation by seniority and sector
+      • Early-warning analytics via valuation dispersion and PIK transitions
+      • Case study on First Brands Group bankruptcy showing lender-level stress signals
+      
+      The resulting index closely tracks the Cliffwater Direct Lending Index (CDLI) while offering superior transparency, granularity, and real-time monitoring capabilities.
+      `,
+        link: 'https://github.com/anichhabra91/Private-Credit-Index-CFEM-x-Marathon-.git'
+      },
     };
 
     document.querySelectorAll('.project-card').forEach(card => {
