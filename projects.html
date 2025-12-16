@@ -112,6 +112,33 @@
       position: relative;
       animation: fadeIn 0.3s ease-out;
     }
+    .modal-content {
+        max-width: 720px;
+        line-height: 1.6;
+      }
+      
+      .modal-title {
+        margin-bottom: 12px;
+      }
+      
+      .modal-desc {
+        font-size: 0.95rem;
+        color: #444;
+      }
+      
+      .modal-desc br {
+        display: block;
+        margin-bottom: 6px;
+      }
+      
+      .modal-link {
+        display: inline-block;
+        margin-top: 16px;
+        font-weight: 600;
+        color: #0072b1;
+        text-decoration: none;
+      }
+
     .close-btn {
       position: absolute;
       top: 10px; right: 20px;
@@ -331,7 +358,17 @@
       card.addEventListener('click', () => {
         const id = card.dataset.id;
         const info = projectInfo[id];
-        const html = `<h2>${info.title}</h2><p>${info.desc}</p><a href="${info.link}" target="_blank">Link ↗</a>`;
+        const formattedDesc = info.desc
+          .trim()
+          .replace(/\n/g, '<br>')
+          .replace(/•/g, '&bull;');
+        
+        const html = `
+          <h2 class="modal-title">${info.title}</h2>
+          <div class="modal-desc">${formattedDesc}</div>
+          <a class="modal-link" href="${info.link}" target="_blank">View Project ↗</a>
+        `;
+
         document.getElementById('modal-body').innerHTML = html;
         document.getElementById('modal').style.display = 'flex';
       });
